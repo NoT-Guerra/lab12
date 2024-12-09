@@ -2,22 +2,24 @@ package it.unibo.es1;
 
 import java.util.List;
 
+import javax.swing.JButton;
+
 public class LogicsImpl implements Logics {
 
 	public LogicsImpl(int size) {
-		//TODO Auto-generated constructor stub
+		for (int i=0; i < size; i++) {
+			JButton _0 = new JButton (""+i);
+		}
 	}
 
 	@Override
 	public int size() {
-		// TODO Auto-generated method stub
-		throw new UnsupportedOperationException("Unimplemented method 'size'");
+		return this.size();
 	}
 
 	@Override
 	public List<Integer> values() {
-		// TODO Auto-generated method stub
-		throw new UnsupportedOperationException("Unimplemented method 'values'");
+		return this.values();
 	}
 
 	@Override
