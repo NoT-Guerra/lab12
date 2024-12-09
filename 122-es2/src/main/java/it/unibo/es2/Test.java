@@ -11,7 +11,7 @@ public class Test {
      * l'applicazione si chiuda.
      * 
      * 
-     * La GUI fornita realizza già gli elementi grafici necessari, ma con una logica preimpostata e non corretta.
+     * La GUI fornita realizza già gli elementi grafici necessari, oma con una lgica preimpostata e non corretta.
      * La si modifiche aggiungendo una interfaccia Logics e una implementazione LogicsImpl come nell'esercizio 
      * precedente. Si faccia attenzione che la logica non contenga concetta di View.
      */
