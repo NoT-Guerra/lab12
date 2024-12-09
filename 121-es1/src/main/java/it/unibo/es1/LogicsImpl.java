@@ -29,8 +29,11 @@ public class LogicsImpl implements Logics {
 
 	@Override
 	public int hit(int elem) {
-		// TODO Auto-generated method stub
-		throw new UnsupportedOperationException("Unimplemented method 'hit'");
+		int n ;
+		n= values.get(elem);
+		n = n+1;
+		values.set(elem, n);
+		return n; 
 	}
 
 	@Override
