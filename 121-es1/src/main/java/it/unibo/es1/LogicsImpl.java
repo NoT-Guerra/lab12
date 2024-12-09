@@ -1,31 +1,30 @@
 package it.unibo.es1;
 
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
-import javax.swing.JButton;
-
 public class LogicsImpl implements Logics {
-
+	private final List<Integer> values;
+	
 	public LogicsImpl(int size) {
-		for (int i=0; i < size; i++) {
-			JButton _0 = new JButton (""+i);
-		}
+		this.values = new ArrayList<>(Collections.nCopies(size,0));
+		
 	}
 
 	@Override
 	public int size() {
-		return this.size();
+		return this.values.size();
 	}
 
 	@Override
 	public List<Integer> values() {
-		return this.values();
+		return Collections.unmodifiableList(values);
 	}
 
 	@Override
 	public List<Boolean> enablings() {
-		// TODO Auto-generated method stub
-		throw new UnsupportedOperationException("Unimplemented method 'enablings'");
+		return values.stream().map(x -> x < values.size()).toList();
 	}
 
 	@Override
