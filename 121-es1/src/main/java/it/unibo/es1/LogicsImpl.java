@@ -49,7 +49,6 @@ public class LogicsImpl implements Logics {
 
 	@Override
 	public boolean toQuit() {
-		// TODO Auto-generated method stub
-		throw new UnsupportedOperationException("Unimplemented method 'toQuit'");
-	}
+		return this.values.stream().allMatch(x -> x==this.values.get(0));
+	} 
 }
